@@ -1,0 +1,136 @@
+<% include ./partials/canvasserNav %>
+
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+</head>
+<style>
+    /* Set the size of the div element that contains the map */
+    #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+        background-color: grey;
+    }
+</style>
+<div class="container">
+
+    <div id="map"></div>
+
+    <div id="talking-points" class="text-center">
+        <h1>Talking Points</h1>
+        <ol>
+            <% for (var i=0; i < talkingPoints.length; i++) { %>
+            <li>
+                <%= talkingPoints[i] %>
+            </li>
+            <% } %>
+        </ol>
+    </div>
+</div>
+<script>
+    var map;
+    var markers = [];
+    // var infoContent;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: { lat: 40.771, lng: -73.974 }
+        });
+    }
+
+    var getMarkerUniqueId = function (lat, lng) {
+        return lat + '_' + lng;
+    }
+
+    //** sets the map on all markers in the array
+    function setMapOnAll(map) {
+        for (marker in markers) {
+            markers[marker].setMap(map);
+        }
+    }
+
+    // Removes the markers from the map, but keeps them in the array.
+    function clearMarkers() {
+        setMapOnAll(null);
+    }
+    // Deletes all markers in the array by removing references to them.
+    function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+    }
+
+    function addRouteNum(loc, location, num, campaignID, taskID, rorc) {
+        var markerId = getMarkerUniqueId(location.lat, location.lng);
+        var getIcon;
+        if (rorc) {
+            getIcon = "https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_red" + num + ".png";
+        } else {
+            getIcon = "https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_green.png";
+        }
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            id: markerId,
+            icon: getIcon
+        });
+
+        var address = loc._streetNumber +
+            ' ' + loc._street +
+            ', ' + loc._unit +
+            ', ' + loc._city +
+            ', ' + loc._state +
+            ', ' + loc._zipcode
+
+        var infoContent = ('<div id="content">' +
+            '<h4> ' + address + ' </h4>' +
+            '<form action="/canvasser/canvassing/enter-results" method="POST">' +
+            '<input type="hidden" name="campaignID" value="' + campaignID + '">' +
+            '<input type="hidden" name="locationID" value="' + loc._ID + '">' +
+            '<input type="hidden" name="taskID" value="' + taskID + '">' +
+            '<input type="submit" value="Enter Results">' +
+            '</form>' +
+            '</div>');
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: infoContent
+        });
+        marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+        });
+
+        markers[markerId] = marker;
+    };
+
+
+    var socket = io();
+    $(document).ready(function () {
+        socket.on('route', function (route) {
+            deleteMarkers();
+            if (route.route != undefined || route.route != null) {
+                for (i in route.route) {
+                    parsedGeocode = { lat: parseFloat(route.route[i].lat), lng: parseFloat(route.route[i].lng) };
+                    addRouteNum(route.locations[i], parsedGeocode, Number(i) + 1, route.campaignID, route.taskID, true);
+                }
+            }
+            if (route.completed != undefined || route.route != null) {
+                for (i in route.completed) {
+                    parsedGeocode = { lat: parseFloat(route.completed[i].lat), lng: parseFloat(route.completed[i].lng) };
+                    addRouteNum(route.cLocations[i], parsedGeocode, Number(i) + 1, route.campaignID, route.taskID, false);
+                }
+            }
+            if (route.route != undefined) {
+                map.setZoom(5);
+                map.setCenter(new google.maps.LatLng(parseFloat(route.route[0].lat), parseFloat(route.route[0].lng)));
+            }
+            // socket.close();
+        });
+    });
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkzTbqwM75PSyw0vwMqiVb9eP6NjnClFk&callback=initMap"></script>
+
+<% include ./partials/footer %>

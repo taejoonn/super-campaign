@@ -1,0 +1,116 @@
+{
+    "routes": [
+        {
+            "locations": [
+                {
+                    "_ID": 79,
+                    "_streetNumber": 5316,
+                    "_street": "Nesconset highway",
+                    "_unit": "0",
+                    "_city": "Port Jefferson Station",
+                    "_state": "NY",
+                    "_zipcode": 11776,
+                    "_lat": 40.921377,
+                    "_long": -73.05201,
+                    "_route": null
+                },
+                {
+                    "_ID": 71,
+                    "_streetNumber": 100,
+                    "_street": "Nicolls Rd",
+                    "_unit": "0",
+                    "_city": "Stony Brook",
+                    "_state": "NY",
+                    "_zipcode": 11794,
+                    "_lat": 40.909696,
+                    "_long": -73.113434,
+                    "_route": null
+                },
+                {
+                    "_ID": 77,
+                    "_streetNumber": 202,
+                    "_street": "Airport Plaza Blvd",
+                    "_unit": "0",
+                    "_city": "Farmingdale",
+                    "_state": "NY",
+                    "_zipcode": 11735,
+                    "_lat": 40.739139,
+                    "_long": -73.419253,
+                    "_route": null
+                },
+                {
+                    "_ID": 72,
+                    "_streetNumber": 1,
+                    "_street": "Education Dr",
+                    "_unit": "0",
+                    "_city": "Garden City",
+                    "_state": "NY",
+                    "_zipcode": 11530,
+                    "_lat": 40.730794,
+                    "_long": -73.591287,
+                    "_route": null
+                },
+                {
+                    "_ID": 73,
+                    "_streetNumber": 1000,
+                    "_street": "Hempstead Turnpike",
+                    "_unit": "0",
+                    "_city": "Hempstead",
+                    "_state": "NY",
+                    "_zipcode": 11549,
+                    "_lat": 40.716792,
+                    "_long": -73.599404,
+                    "_route": null
+                },
+                {
+                    "_ID": 74,
+                    "_streetNumber": 1,
+                    "_street": "South Ave",
+                    "_unit": "0",
+                    "_city": "Garden City",
+                    "_state": "NY",
+                    "_zipcode": 11530,
+                    "_lat": 40.720719,
+                    "_long": -73.650767,
+                    "_route": null
+                },
+                {
+                    "_ID": 76,
+                    "_streetNumber": 234,
+                    "_street": "Main St",
+                    "_unit": "0",
+                    "_city": "Farmingdale",
+                    "_state": "NY",
+                    "_zipcode": 11735,
+                    "_lat": 40.722987,
+                    "_long": -73.442116,
+                    "_route": null
+                },
+                {
+                    "_ID": 75,
+                    "_streetNumber": 188,
+                    "_street": "Merritts Rd",
+                    "_unit": "0",
+                    "_city": "Farmingdale",
+                    "_state": "NY",
+                    "_zipcode": 11735,
+                    "_lat": 40.724216,
+                    "_long": -73.459155,
+                    "_route": null
+                },
+                {
+                    "_ID": 78,
+                    "_streetNumber": 2245,
+                    "_street": "Broadhollow Rd",
+                    "_unit": "0",
+                    "_city": "Farmingdale",
+                    "_state": "NY",
+                    "_zipcode": 11735,
+                    "_lat": 40.725064,
+                    "_long": -73.423329,
+                    "_route": null
+                }
+            ]
+        }
+    ]
+}
