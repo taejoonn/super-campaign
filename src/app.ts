@@ -39,11 +39,11 @@ app.use(bodyParser.json());
 app.use(expressValidator());    // This MUST come after bodyParser.
 app.use(methodOverride('_method'));
 const options = {
-  host: '35.245.70.68',
+  host: 'aa104ycuhaesg5p.caegge3r7y01.us-east-1.rds.amazonaws.com',
   port: 3306,
   user: 'root',
-  password: '',
-  database: 'supercampaign'
+  password: 'password',
+  database: 'aa104ycuhaesg5p'
 };
 const sessionStore = new MySQLStore(options);
 app.use(session({

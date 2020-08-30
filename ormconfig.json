@@ -1,10 +1,10 @@
 {
    "type": "mysql",
-   "host": "35.245.70.68",
+   "host": "aa104ycuhaesg5p.caegge3r7y01.us-east-1.rds.amazonaws.com",
    "port": 3306,
    "username": "root",
-   "password": "",
-   "database": "supercampaign",
+   "password": "password",
+   "database": "aa104ycuhaesg5p",
    "synchronize": true,
    "logging": false,
    "entities": [
