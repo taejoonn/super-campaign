@@ -43,7 +43,7 @@ const options = {
   port: 3306,
   user: 'root',
   password: 'password',
-  database: 'aa104ycuhaesg5p'
+  database: 'ebdb'
 };
 const sessionStore = new MySQLStore(options);
 app.use(session({
