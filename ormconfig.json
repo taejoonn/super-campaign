@@ -1,11 +1,11 @@
 {
    "type": "mysql",
-   "host": "localhost",
+   "host": "35.245.70.68",
    "port": 3306,
-   "username": "test",
-   "password": "test",
-   "database": "test",
-   "synchronize": false,
+   "username": "root",
+   "password": "",
+   "database": "supercampaign",
+   "synchronize": true,
    "logging": false,
    "entities": [
       "dist/backend/entity/*.js"

@@ -726,3 +726,10 @@
 2018-12-10 19:59:29 info: /user/new - Created user: c2 with id: 2. Has permission 2.
 2018-12-10 19:59:32 info: /user/new - Created user: c3 with id: 3. Has permission 2.
 2018-12-10 19:59:36 info: /user/new - Created user: m1 with id: 4. Has permission 1.
+2019-03-18 15:38:18 info: /user/new - Created user: admin with id: 1. Has permission 3.
+2019-03-18 15:38:29 info: /user/new - Created user: cm1 with id: 2. Has permission 1.
+2019-03-18 15:38:37 info: /user/new - Created user: cm2 with id: 3. Has permission 1.
+2019-03-18 15:38:46 info: /user/new - Created user: cm3 with id: 4. Has permission 1.
+2019-03-18 15:39:00 info: /user/new - Created user: cnv1 with id: 5. Has permission 2.
+2019-03-18 15:39:11 info: /user/new - Created user: cnv2 with id: 6. Has permission 2.
+2019-03-18 15:39:20 info: /user/new - Created user: cnv3 with id: 7. Has permission 2.
