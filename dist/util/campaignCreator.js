@@ -17,7 +17,7 @@ const campaignRepo = require("../repositories/campaignRepo");
 const logger = require('../util/logger');
 const campaignLogger = logger.getLogger('campaignLogger');
 const googleMapsClient = require('@google/maps').createClient({
-    key: 'AIzaSyAkzTbqwM75PSyw0vwMqiVb9eP6NjnClFk',
+    key: 'AIzaSyDeR11lAE5_xyjlYoxq3mAo0dSzVs2xyaM',
     Promise: Promise
 });
 exports.emptyCampaign = (campaignID) => {
@@ -75,8 +75,10 @@ exports.saveManagers = (campaign, managers) => __awaiter(this, void 0, void 0, f
     for (let i in managers) {
         if (managers[i] != "") {
             usr = yield campaignRepo.getManagerByUsername(managers[i]);
+            console.log(usr);
             if (usr !== undefined) {
                 cm = yield campaignRepo.getManagerByUser(usr);
+                console.log(cm);
                 if (cm !== undefined) {
                     campaign.managers.push(cm);
                 }

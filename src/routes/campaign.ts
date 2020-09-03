@@ -26,13 +26,11 @@ router.get('/new', middleware.isManager, async (req: Request, res: Response) => 
 
 //Removed authentication for now
 router.get('/home', middleware.isManager, async (req: Request, res: Response) => {
-
     let campaigns = await getManager()
         .createQueryBuilder(Campaign, "campaigns")
         .leftJoinAndSelect("campaigns._managers", "managers")
         .leftJoinAndSelect("managers._ID", "ids")
         .getMany();
-
     let c = [];
     for (let i = 0; i < campaigns.length; i++) {
         for (let j = 0; j < campaigns[i].managers.length; j++) {
@@ -83,8 +81,13 @@ router.post('/', middleware.isManager, async (req: Request, res: Response) => {
     campaignLogger.info(`Saved locations for: ${campaign._name}`);
 
 
-    //Save canavassers    
+    // Save canavassers    
     await campaignCreator.saveCanavaser(campaign, req.body.campaign.canvassers);
+
+
+    // Update the campaign
+    await campaignCreator.saveCampaign(campaign);
+
     res.redirect('/home');
 });
 

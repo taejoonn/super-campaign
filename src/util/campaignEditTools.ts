@@ -12,7 +12,7 @@ import * as campaignRepo from '../repositories/campaignRepo';
 const logger = require('../util/logger');
 const campaignLogger = logger.getLogger('campaignLogger');
 const googleMapsClient = require('@google/maps').createClient({
-    key: 'AIzaSyAkzTbqwM75PSyw0vwMqiVb9eP6NjnClFk',
+    key: 'AIzaSyDeR11lAE5_xyjlYoxq3mAo0dSzVs2xyaM',
     Promise: Promise
 });
 

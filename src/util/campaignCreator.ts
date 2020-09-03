@@ -9,7 +9,7 @@ const logger = require('../util/logger');
 const campaignLogger = logger.getLogger('campaignLogger');
 
 const googleMapsClient = require('@google/maps').createClient({
-    key: 'AIzaSyAkzTbqwM75PSyw0vwMqiVb9eP6NjnClFk',
+    key: 'AIzaSyDeR11lAE5_xyjlYoxq3mAo0dSzVs2xyaM',
     Promise: Promise
 });
 
@@ -78,10 +78,10 @@ export const saveManagers = async (campaign, managers) => {
     for (let i in managers) {
         if (managers[i] != "") {
             usr = await campaignRepo.getManagerByUsername(managers[i]);
-            
+            console.log(usr);
             if (usr !== undefined) {
                 cm = await campaignRepo.getManagerByUser(usr);
-
+                console.log(cm);
                 if (cm !== undefined) {
                     campaign.managers.push(cm);
                 } else {

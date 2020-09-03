@@ -73,8 +73,10 @@ router.post('/', middleware.isManager, (req, res) => __awaiter(this, void 0, voi
     // Save this campaigns locations    
     yield campaignCreator.saveLocations(campaign, req.body.campaign.locations);
     campaignLogger.info(`Saved locations for: ${campaign._name}`);
-    //Save canavassers    
+    // Save canavassers    
     yield campaignCreator.saveCanavaser(campaign, req.body.campaign.canvassers);
+    // Update the campaign
+    yield campaignCreator.saveCampaign(campaign);
     res.redirect('/home');
 }));
 /**

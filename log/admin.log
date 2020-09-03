@@ -741,3 +741,9 @@
 2020-09-03 12:00:01 info: /user/new - Created user: admin with id: 1. Has permission 3.
 2020-09-03 12:00:14 info: /user/new - Created user: manager with id: 2. Has permission 1.
 2020-09-03 12:00:30 info: /user/new - Created user: canvasser with id: 3. Has permission 2.
+2020-09-03 12:58:05 info: /user/new - Created user: admin with id: 1. Has permission 3.
+2020-09-03 12:58:19 info: /user/new - Created user: manager with id: 2. Has permission 1.
+2020-09-03 12:58:33 info: /user/new - Created user: canvasser with id: 3. Has permission 2.
+2020-09-03 16:00:37 info: /user/new - Created user: admin with id: 1. Has permission 3.
+2020-09-03 16:00:47 info: /user/new - Created user: manager with id: 2. Has permission 1.
+2020-09-03 16:00:56 info: /user/new - Created user: canvasser with id: 3. Has permission 2.

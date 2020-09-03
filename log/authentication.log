@@ -699,3 +699,36 @@
 2020-09-03 12:00:41 warn: campaigner was not found.
 2020-09-03 12:00:59 warn: campaigner was not found.
 2020-09-03 12:01:01 info: /login -manager
+2020-09-03 12:42:30 info: /login -canvasser
+2020-09-03 12:42:33 info: /logout - canvasser
+2020-09-03 12:42:34 info: /login -manager
+2020-09-03 12:57:49 warn: canvasser was not found.
+2020-09-03 12:58:44 info: /login -canvasser
+2020-09-03 12:59:24 info: /login -canvasser
+2020-09-03 12:59:28 info: /logout - canvasser
+2020-09-03 12:59:30 info: /login -manager
+2020-09-03 15:12:37 info: /login -manager
+2020-09-03 15:13:06 info: /login -canvasser
+2020-09-03 15:13:08 info: /logout - canvasser
+2020-09-03 15:13:09 info: /login -manager
+2020-09-03 15:17:58 info: /login -manager
+2020-09-03 15:19:02 info: /login -manager
+2020-09-03 15:22:57 info: /login -manager
+2020-09-03 15:30:56 info: /login -manager
+2020-09-03 15:31:32 info: /login -manager
+2020-09-03 15:47:13 info: /logout - manager
+2020-09-03 15:47:15 info: /login -manager
+2020-09-03 15:47:48 info: /login -manager
+2020-09-03 15:57:37 info: /login -manager
+2020-09-03 15:58:33 info: /login -manager
+2020-09-03 16:00:00 warn: canvasser was not found.
+2020-09-03 16:01:04 info: /login -canvasser
+2020-09-03 16:01:26 info: /login -canvasser
+2020-09-03 16:01:28 info: /logout - canvasser
+2020-09-03 16:01:29 info: /login -manager
+2020-09-03 16:02:45 info: /login -manager
+2020-09-03 16:03:20 info: /login -manager
+2020-09-03 16:03:31 info: /logout - manager
+2020-09-03 16:03:33 info: /login -canvasser
+2020-09-03 16:10:07 info: /logout - canvasser
+2020-09-03 16:10:09 info: /login -canvasser
