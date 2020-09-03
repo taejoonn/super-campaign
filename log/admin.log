@@ -733,3 +733,11 @@
 2019-03-18 15:39:00 info: /user/new - Created user: cnv1 with id: 5. Has permission 2.
 2019-03-18 15:39:11 info: /user/new - Created user: cnv2 with id: 6. Has permission 2.
 2019-03-18 15:39:20 info: /user/new - Created user: cnv3 with id: 7. Has permission 2.
+2020-09-03 10:37:12 info: /user/new - Created user: admin with id: 1. Has permission 3.
+2020-09-03 10:37:30 info: /user/new - Created user: manager with id: 2. Has permission 1.
+2020-09-03 10:37:46 info: /user/new - Created user: canvasser with id: 3. Has permission 2.
+2020-09-03 10:38:33 info: /user/new - Created user: alex with id: 4. Has permission 2.
+2020-09-03 10:38:49 info: /user/new - Created user: test with id: 5. Has permission 2.
+2020-09-03 12:00:01 info: /user/new - Created user: admin with id: 1. Has permission 3.
+2020-09-03 12:00:14 info: /user/new - Created user: manager with id: 2. Has permission 1.
+2020-09-03 12:00:30 info: /user/new - Created user: canvasser with id: 3. Has permission 2.

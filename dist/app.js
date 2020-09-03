@@ -22,6 +22,7 @@ const authentication_1 = require("./routes/authentication");
 const campaign_1 = require("./routes/campaign");
 const manager_1 = require("./routes/manager");
 const canvasser_1 = require("./routes/canvasser");
+const fs = require('fs');
 const app = express();
 /**
  * Configurations
@@ -35,11 +36,11 @@ app.use(bodyParser.json());
 app.use(expressValidator()); // This MUST come after bodyParser.
 app.use(methodOverride('_method'));
 const options = {
-    host: 'aa104ycuhaesg5p.caegge3r7y01.us-east-1.rds.amazonaws.com',
+    host: '34.86.118.99',
     port: 3306,
     user: 'root',
-    password: 'lazybr00',
-    database: 'aa104ycuhaesg5p'
+    password: '',
+    database: 'super',
 };
 const sessionStore = new MySQLStore(options);
 app.use(session({

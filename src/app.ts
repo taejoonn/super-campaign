@@ -24,6 +24,7 @@ import { campaignRouter } from './routes/campaign';
 import { managerRouter } from './routes/manager';
 import { canvasserRouter } from './routes/canvasser';
 
+const fs = require('fs');
 const app = express();
 
 
@@ -38,12 +39,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(expressValidator());    // This MUST come after bodyParser.
 app.use(methodOverride('_method'));
+
 const options = {
-  host: 'aa104ycuhaesg5p.caegge3r7y01.us-east-1.rds.amazonaws.com',
+  host: '34.86.118.99',
   port: 3306,
   user: 'root',
-  password: 'password',
-  database: 'ebdb'
+  password: '',
+  database: 'super',
 };
 const sessionStore = new MySQLStore(options);
 app.use(session({

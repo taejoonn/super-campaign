@@ -695,3 +695,7 @@
 2019-03-18 15:44:03 info: /logout - cnv3
 2019-03-18 15:44:08 info: /login -cm1
 2019-03-18 15:46:25 info: /login -cm1
+2020-09-03 11:41:32 warn: cavasser was not found.
+2020-09-03 12:00:41 warn: campaigner was not found.
+2020-09-03 12:00:59 warn: campaigner was not found.
+2020-09-03 12:01:01 info: /login -manager
