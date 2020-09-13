@@ -18,7 +18,7 @@ const User_1 = require("../backend/entity/User");
 const Canvasser_1 = require("../backend/entity/Canvasser");
 const campaignParser = require("./campaignParser");
 const googleMapsClient = require('@google/maps').createClient({
-    key: 'AIzaSyDeR11lAE5_xyjlYoxq3mAo0dSzVs2xyaM'
+    key: 'GOOGLE API KEY'
 });
 exports.getTalkingPoints = (campaign, talkingPoints) => __awaiter(this, void 0, void 0, function* () {
     return campaignParser.getTalkingPoints(campaign, talkingPoints);
