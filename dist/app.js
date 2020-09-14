@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 app.use(expressValidator()); // This MUST come after bodyParser.
 app.use(methodOverride('_method'));
 const options = {
-    host: '34.86.118.99',
+    host: '34.86.211.71',
     port: 3306,
     user: 'root',
     password: '',
