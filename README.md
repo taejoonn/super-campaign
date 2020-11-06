@@ -37,3 +37,4 @@ The full folder structure of this app is explained below:
 
 Demo:
 
+![Image of demo gif](https://github.com/taejoonn/super-campaign/blob/master/public/images/super-campain-demo.gif)
