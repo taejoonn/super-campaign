@@ -30,10 +30,10 @@ The full folder structure of this app is explained below:
 | **src**/server.ts        | Entry point to your express app                                                               |
 | **test**                 | Contains your tests. Seperate from source because there is a different build process.         |
 | **views**                | Views define how your app renders on the client. In this case we're using pug                 |
-| package.json             | File that contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)                          |
+| package.json             | File that contains npm dependencies as well as [build scripts]                                |
 | tsconfig.json            | Config settings for compiling server code written in TypeScript                               |
 | ormconfig.json 		   | Config settings for TypeORM. Where you specifiy the DB credentials and connection			   |
 
 
-# Where I'm getting structure from
-https://github.com/Microsoft/TypeScript-Node-Starter
+Demo:
+

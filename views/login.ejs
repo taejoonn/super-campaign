@@ -23,16 +23,28 @@
 			border: 1px solid black;
 		}
 		.row-conformity .to-bottom {position:absolute; bottom:0; left:0; right:0}
+		body {
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		button {
+			background-color: #80ced6;
+			color: aliceblue;
+		}
 	</style>
 	</head>
-<body style="background-color:#D3D3D3">
+<body background='images/door-to-door.png'>
 	
 	<div class="text-center" style="position:relative;padding-top: 40px;display:flex;align-items:center;justify-content:center;">
+<<<<<<< HEAD
+	<h1 class="mt-4 mb-3" style="color: aliceblue;"><Strong>Super Campaign</Strong></h1>
+=======
 	<h1 class="mt-4 mb-3">Super Canvasser</h1>
+>>>>>>> parent of 7e976e5... GCP Version
 	</div>
 
 	<div class="container-fluid rounded" style="max-width:344px; border:2px solid black;background-color:white;">
-        <h2 class="text-center mb-4 mt-3">Choose a user for demo</h2>
+        <h2 class="text-center mb-4 mt-3">Choose a user to demo</h2>
         
 		<form action="/" method="POST">
 			
@@ -43,6 +55,6 @@
 		</div>	
 		</form>
 
-	</div><!-- Close container -->
-	<div class="container-fluid text-center">&copy; 2018</div>
+	</div>
+
 <% include ./partials/footer %>

@@ -2,30 +2,6 @@
 	"locations": [
 		{
 			"_ID": 1,
-			"_streetNumber": 100,
-			"_street": "Nicolls Rd",
-			"_unit": "0",
-			"_city": "Stony Brook",
-			"_state": "NY",
-			"_zipcode": 11794,
-			"_lat": 40.912376,
-			"_long": -73.123389,
-			"_route": null
-		},
-		{
-			"_ID": 1,
-			"_streetNumber": 100,
-			"_street": "Nicolls Rd",
-			"_unit": "0",
-			"_city": "Stony Brook",
-			"_state": "NY",
-			"_zipcode": 11794,
-			"_lat": 40.912376,
-			"_long": -73.123389,
-			"_route": null
-		},
-		{
-			"_ID": 2,
 			"_streetNumber": 1,
 			"_street": "Education Dr",
 			"_unit": "0",
@@ -37,7 +13,19 @@
 			"_route": null
 		},
 		{
-			"_ID": 3,
+			"_ID": 1,
+			"_streetNumber": 1,
+			"_street": "Education Dr",
+			"_unit": "0",
+			"_city": "Garden City",
+			"_state": "NY",
+			"_zipcode": 11530,
+			"_lat": 40.73094,
+			"_long": -73.591949,
+			"_route": null
+		},
+		{
+			"_ID": 2,
 			"_streetNumber": 1000,
 			"_street": "Hempstead Turnpike",
 			"_unit": "0",
@@ -49,7 +37,7 @@
 			"_route": null
 		},
 		{
-			"_ID": 4,
+			"_ID": 3,
 			"_streetNumber": 1,
 			"_street": "South Ave",
 			"_unit": "0",
@@ -61,7 +49,7 @@
 			"_route": null
 		},
 		{
-			"_ID": 5,
+			"_ID": 4,
 			"_streetNumber": 188,
 			"_street": "Merritts Rd",
 			"_unit": "0",
@@ -73,7 +61,7 @@
 			"_route": null
 		},
 		{
-			"_ID": 6,
+			"_ID": 5,
 			"_streetNumber": 234,
 			"_street": "Main St",
 			"_unit": "0",
@@ -85,7 +73,7 @@
 			"_route": null
 		},
 		{
-			"_ID": 7,
+			"_ID": 6,
 			"_streetNumber": 202,
 			"_street": "Airport Plaza Blvd",
 			"_unit": "0",
@@ -97,7 +85,7 @@
 			"_route": null
 		},
 		{
-			"_ID": 8,
+			"_ID": 7,
 			"_streetNumber": 2245,
 			"_street": "Broadhollow Rd",
 			"_unit": "0",
@@ -106,18 +94,6 @@
 			"_zipcode": 11735,
 			"_lat": 40.737772,
 			"_long": -73.423335,
-			"_route": null
-		},
-		{
-			"_ID": 9,
-			"_streetNumber": 5316,
-			"_street": "Nesconset highway",
-			"_unit": "0",
-			"_city": "Port Jefferson Station",
-			"_state": "NY",
-			"_zipcode": 11776,
-			"_lat": 40.916591,
-			"_long": -73.054933,
 			"_route": null
 		}
 	],
